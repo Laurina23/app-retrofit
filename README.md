@@ -25,3 +25,8 @@ The application fetches product data from the https://fakestoreapi.com/products.
 <img src="ss_data.png" alt="UI Preview" width="855" height="50"/>   
 <img src="ss_data1.png" alt="UI Preview" width="755" height="100"/>
 
+### Preview of Application:
+<img src="ss(1).png" alt="UI Preview" width="200" height="400"/>  <img src="ss(2).png" alt="UI Preview" width="200" height="400"/>      
+<img src="ss(3).png" alt="UI Preview" width="200" height="400"/>      
+    
+ 
