@@ -1,5 +1,6 @@
 package com.example.app_retrofit
 
+import ProductScreen
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -23,7 +24,6 @@ import com.example.app_retrofit.Model.API.RetrofitClient
 import com.example.app_retrofit.Model.Data.Product
 import com.example.app_retrofit.Model.Repository.ProductRepository
 import com.example.app_retrofit.ViewModels.ProductViewModel
-import com.example.app_retrofit.Views.ProductScreen
 import kotlinx.coroutines.launch
 
 class MainActivity : ComponentActivity() {
