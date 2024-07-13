@@ -2,6 +2,7 @@ package com.example.app_retrofit.Views
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -12,13 +13,17 @@ import androidx.compose.runtime.Composable
 import com.example.app_retrofit.Model.Data.Product
 import com.example.app_retrofit.ViewModels.ProductViewModel
 import androidx.compose.material3.Card
+import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
+import com.example.app_retrofit.R
 
 @Composable
 fun ProductScreen(productVM: ProductViewModel) {
@@ -50,6 +55,8 @@ fun ProductItem(product: Product) {
 
             )
             Text(text = product.title)
+            Text(text = "Rating: ${product.rating.rate} (${product.rating.count} reviews)")
+
         }
     }
 }
