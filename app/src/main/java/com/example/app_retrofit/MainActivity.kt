@@ -24,6 +24,8 @@ import com.example.app_retrofit.Model.API.RetrofitClient
 import com.example.app_retrofit.Model.Data.Product
 import com.example.app_retrofit.Model.Repository.ProductRepository
 import com.example.app_retrofit.ViewModels.ProductViewModel
+import com.example.app_retrofit.ViewModels.UserViewModel
+import com.example.app_retrofit.Views.UserScreen
 import kotlinx.coroutines.launch
 
 class MainActivity : ComponentActivity() {
@@ -31,8 +33,10 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             val productVM: ProductViewModel by viewModels()
+            val userVM: UserViewModel by viewModels()
             App_retrofitTheme {
-                ProductScreen(productVM)
+                UserScreen(userVM)
+                //ProductScreen(productVM)
 //                Column(
 //                    modifier = Modifier
 //                        .padding(20.dp)
